@@ -18,3 +18,5 @@ Imports:
     httr2,
     magrittr,
     tibble
+URL: https://github.com/tyluRp/strava
+BugReports: https://github.com/tyluRp/strava/issues
