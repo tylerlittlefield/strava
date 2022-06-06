@@ -1,9 +1,6 @@
-#' List Club Activities
+#' List Club Members
 #'
-#' Retrieve recent activities from members of a specific club. The authenticated
-#' athlete must belong to the requested club in order to hit this endpoint.
-#' Pagination is supported. Athlete profile visibility is respected for all
-#' activities.
+#' Returns a list of the athletes who are members of a given club.
 #'
 #' @param id The identifier of the club.
 #' @param page Page number. Defaults to 1.
@@ -13,14 +10,14 @@
 #' stored in your `.Renviron` file.
 #'
 #' @export
-get_clubs_activities <- function(
+get_clubs_members <- function(
     id,
     page = 1,
     per_page = 30,
     scope = "activity:read",
     client = strava_client()
 ) {
-  resource <- sprintf("clubs/%s/activities", id)
+  resource <- sprintf("clubs/%s/members", id)
 
   strava(
     resource = resource,
