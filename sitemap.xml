@@ -46,6 +46,9 @@
     <loc>https://tylurp.github.io/strava/reference/get_athlete_zones.html</loc>
   </url>
   <url>
+    <loc>https://tylurp.github.io/strava/reference/get_athletes_routes.html</loc>
+  </url>
+  <url>
     <loc>https://tylurp.github.io/strava/reference/get_clubs.html</loc>
   </url>
   <url>
@@ -59,6 +62,15 @@
   </url>
   <url>
     <loc>https://tylurp.github.io/strava/reference/get_gear.html</loc>
+  </url>
+  <url>
+    <loc>https://tylurp.github.io/strava/reference/get_routes.html</loc>
+  </url>
+  <url>
+    <loc>https://tylurp.github.io/strava/reference/get_routes_export_gpx.html</loc>
+  </url>
+  <url>
+    <loc>https://tylurp.github.io/strava/reference/get_routes_export_tcx.html</loc>
   </url>
   <url>
     <loc>https://tylurp.github.io/strava/reference/index.html</loc>
