@@ -37,6 +37,9 @@
     <loc>https://tylurp.github.io/strava/reference/get_athlete_activities.html</loc>
   </url>
   <url>
+    <loc>https://tylurp.github.io/strava/reference/get_athlete_clubs.html</loc>
+  </url>
+  <url>
     <loc>https://tylurp.github.io/strava/reference/get_athlete_stats.html</loc>
   </url>
   <url>
@@ -50,6 +53,9 @@
   </url>
   <url>
     <loc>https://tylurp.github.io/strava/reference/get_clubs_admins.html</loc>
+  </url>
+  <url>
+    <loc>https://tylurp.github.io/strava/reference/get_clubs_members.html</loc>
   </url>
   <url>
     <loc>https://tylurp.github.io/strava/reference/index.html</loc>
