@@ -34,11 +34,7 @@ Refresh your R session and make a request:
 ```{r}
 library(strava)
 
-if (interactive()) athlete_activities()
+if (interactive()) get_athlete_activities()
 ```
 
-The first time you make a request, you will be asked to authorize. After authorization, the token will be cached in memory for future requests in the current session. If you wish to store the token across multiple sessions, you can store it on your computer with:
-
-```{r}
-athlete_activities(cache_disk = TRUE)
-```
+The first time you make a request, you will be asked to authorize. After authorization, the token will be cached in memory for future requests in the current session.
