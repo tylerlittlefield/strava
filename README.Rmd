@@ -23,7 +23,7 @@ The goal of strava is to access the strava API from R.
 
 ## Authenticate
 
-First, create an API application from your personal strava account, read more here: https://developers.strava.com/docs/getting-started/
+Create an API application from your personal strava account, read more here: https://developers.strava.com/docs/getting-started/
 
 Then store the following credentials in your `.Renviron` file that you can find with `usethis::edit_r_environ`:
 

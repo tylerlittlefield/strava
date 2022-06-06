@@ -2,3 +2,16 @@ url: https://tylurp.github.io/strava/
 template:
   bootstrap: 5
 
+reference:
+- title: Activities
+  contents:
+  - contains("activities")
+- title: Athletes
+  contents:
+  - contains("athlete")
+- title: Clubs
+  contents:
+  - contains("clubs")
+- title: Helpers
+  contents:
+  - strava_client

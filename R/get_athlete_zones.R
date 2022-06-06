@@ -8,7 +8,7 @@
 #' stored in your `.Renviron` file.
 #'
 #' @export
-get_zones <- function(
+get_athlete_zones <- function(
     scope = "profile:read_all",
     client = strava_client()
 ) {
