@@ -4,6 +4,8 @@
 # strava
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/tyluRp/strava/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/tyluRp/strava/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of strava is to access the strava API from R.
