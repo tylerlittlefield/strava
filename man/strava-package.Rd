@@ -12,6 +12,7 @@ Easily access data from the 'Strava API' \url{https://developers.strava.com/}.
 Useful links:
 \itemize{
   \item \url{https://github.com/tyluRp/strava}
+  \item \url{https://tylurp.github.io/strava/}
   \item Report bugs at \url{https://github.com/tyluRp/strava/issues}
 }
 
