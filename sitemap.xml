@@ -73,6 +73,21 @@
     <loc>https://tylurp.github.io/strava/reference/get_routes_export_tcx.html</loc>
   </url>
   <url>
+    <loc>https://tylurp.github.io/strava/reference/get_segment_efforts.html</loc>
+  </url>
+  <url>
+    <loc>https://tylurp.github.io/strava/reference/get_segment_efforts_by_id.html</loc>
+  </url>
+  <url>
+    <loc>https://tylurp.github.io/strava/reference/get_segments.html</loc>
+  </url>
+  <url>
+    <loc>https://tylurp.github.io/strava/reference/get_segments_explore.html</loc>
+  </url>
+  <url>
+    <loc>https://tylurp.github.io/strava/reference/get_segments_starred.html</loc>
+  </url>
+  <url>
     <loc>https://tylurp.github.io/strava/reference/index.html</loc>
   </url>
   <url>
