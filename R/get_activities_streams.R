@@ -14,7 +14,7 @@
 get_activities_streams <- function(
     id,
     keys = NULL,
-    keys_by_type = TRUE,
+    key_by_type = TRUE,
     scope = "activity:read",
     client = strava_client()
 ) {
@@ -23,7 +23,7 @@ get_activities_streams <- function(
   strava(
     resource = resource,
     keys = keys,
-    keys_by_type = keys_by_type,
+    key_by_type = key_by_type,
     scope = scope,
     client = client
   )

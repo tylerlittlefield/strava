@@ -7,7 +7,7 @@
 get_segment_efforts_streams(
   id,
   keys = NULL,
-  keys_by_type = TRUE,
+  key_by_type = TRUE,
   scope = "activity:read",
   client = strava_client()
 )
@@ -17,12 +17,12 @@ get_segment_efforts_streams(
 
 \item{keys}{Desired stream types. May take one of the following values:}
 
+\item{key_by_type}{Must be true.}
+
 \item{scope}{Authorization scope.}
 
 \item{client}{Strava client. By default, assumes you have client credentials
 stored in your \code{.Renviron} file.}
-
-\item{key_by_type}{Must be true.}
 }
 \description{
 Returns a set of streams for a segment effort completed by the authenticated
