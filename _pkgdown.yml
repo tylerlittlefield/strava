@@ -18,6 +18,12 @@ reference:
 - title: Routes
   contents:
   - contains("routes")
+- title: Segment Efforts
+  contents:
+  - contains("efforts")
+- title: Segments
+  contents:
+  - contains("segment")
 - title: Helpers
   contents:
   - strava_client
