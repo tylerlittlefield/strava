@@ -54,7 +54,7 @@ activity:read_all scope for Only Me activities.</p>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">get_activities_streams</span><span class="op">(</span>
   <span class="va">id</span>,
   keys <span class="op">=</span> <span class="cn">NULL</span>,
-  keys_by_type <span class="op">=</span> <span class="cn">TRUE</span>,
+  key_by_type <span class="op">=</span> <span class="cn">TRUE</span>,
   scope <span class="op">=</span> <span class="st">"activity:read"</span>,
   client <span class="op">=</span> <span class="fu"><a href="strava_client.html">strava_client</a></span><span class="op">(</span><span class="op">)</span>
 <span class="op">)</span></code></pre></div>
@@ -66,13 +66,13 @@ activity:read_all scope for Only Me activities.</p>
 <dd><p>The identifier of the activity.</p></dd>
 <dt>keys</dt>
 <dd><p>Desired stream types. May take one of the following values:</p></dd>
+<dt>key_by_type</dt>
+<dd><p>Must be true.</p></dd>
 <dt>scope</dt>
 <dd><p>Authorization scope.</p></dd>
 <dt>client</dt>
 <dd><p>Strava client. By default, assumes you have client credentials
 stored in your <code>.Renviron</code> file.</p></dd>
-<dt>key_by_type</dt>
-<dd><p>Must be true.</p></dd>
 </dl></div>
 
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
