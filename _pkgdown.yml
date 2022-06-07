@@ -24,6 +24,9 @@ reference:
 - title: Segments
   contents:
   - contains("segment")
+- title: Streams
+  contents:
+  - contains("streams")
 - title: Helpers
   contents:
   - strava_client

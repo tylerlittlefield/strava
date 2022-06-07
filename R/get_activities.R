@@ -10,6 +10,10 @@
 #' @param client Strava client. By default, assumes you have client credentials
 #' stored in your `.Renviron` file.
 #'
+#' @returns
+#' The activity's detailed representation. An instance of
+#' [DetailedActivity](https://developers.strava.com/docs/reference/#api-models-DetailedActivity).
+#'
 #' @examples
 #' if (FALSE) {
 #'   get_activities(7255352296)

@@ -21,6 +21,10 @@ get_activities(
 \item{client}{Strava client. By default, assumes you have client credentials
 stored in your \code{.Renviron} file.}
 }
+\value{
+The activity's detailed representation. An instance of
+\href{https://developers.strava.com/docs/reference/#api-models-DetailedActivity}{DetailedActivity}.
+}
 \description{
 Returns the given activity that is owned by the authenticated athlete.
 Requires activity:read for Everyone and Followers activities. Requires
