@@ -28,6 +28,9 @@
     <loc>https://tylurp.github.io/strava/reference/get_activities_laps.html</loc>
   </url>
   <url>
+    <loc>https://tylurp.github.io/strava/reference/get_activities_streams.html</loc>
+  </url>
+  <url>
     <loc>https://tylurp.github.io/strava/reference/get_activities_zones.html</loc>
   </url>
   <url>
@@ -73,10 +76,16 @@
     <loc>https://tylurp.github.io/strava/reference/get_routes_export_tcx.html</loc>
   </url>
   <url>
+    <loc>https://tylurp.github.io/strava/reference/get_routes_streams.html</loc>
+  </url>
+  <url>
     <loc>https://tylurp.github.io/strava/reference/get_segment_efforts.html</loc>
   </url>
   <url>
     <loc>https://tylurp.github.io/strava/reference/get_segment_efforts_by_id.html</loc>
+  </url>
+  <url>
+    <loc>https://tylurp.github.io/strava/reference/get_segment_efforts_streams.html</loc>
   </url>
   <url>
     <loc>https://tylurp.github.io/strava/reference/get_segments.html</loc>
@@ -86,6 +95,9 @@
   </url>
   <url>
     <loc>https://tylurp.github.io/strava/reference/get_segments_starred.html</loc>
+  </url>
+  <url>
+    <loc>https://tylurp.github.io/strava/reference/get_segments_streams.html</loc>
   </url>
   <url>
     <loc>https://tylurp.github.io/strava/reference/index.html</loc>
