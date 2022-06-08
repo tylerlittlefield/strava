@@ -10,7 +10,7 @@
 
 The goal of strava is to access the strava API from R.
 
-## Authenticate
+## Getting started
 
 Create an API application from your personal strava account, read more
 here: <https://developers.strava.com/docs/getting-started/>
