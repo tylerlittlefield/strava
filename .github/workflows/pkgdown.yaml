@@ -34,9 +34,7 @@ jobs:
           needs: website
 
       - name: Install dependencies
-        run: |
-          install.packages("devtools")
-          devtools::install_github("amirmasoudabdol/preferably")
+        run: install.packages("preferably")
         shell: Rscript {0}
 
       - name: Build site
