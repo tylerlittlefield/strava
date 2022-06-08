@@ -7,6 +7,14 @@
 #' @param client Strava client. By default, assumes you have client credentials
 #' stored in your `.Renviron` file.
 #'
+#' @examples
+#' if (FALSE) {
+#'   get_gear("b10826293")
+#' }
+#'
+#' # example response
+#' tidy(strava_data$gear)
+#'
 #' @export
 get_gear <- function(
     id,

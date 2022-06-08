@@ -13,6 +13,17 @@
 #' @param client Strava client. By default, assumes you have client credentials
 #' stored in your `.Renviron` file.
 #'
+#' @examples
+#' if (FALSE) {
+#'   get_segments_explore(
+#'     bounds = "33.8651,-118.8450,34.2065,-118.1886",
+#'     activity_type = "riding"
+#'   )
+#' }
+#'
+#' # example response
+#' tidy(strava_data$segments_explore)
+#'
 #' @export
 get_segments_explore <- function(
     bounds = NULL,
@@ -49,5 +60,4 @@ tidy.strava_segments_explore <- function(x, ...) {
     tidyr::unnest_wider("value") %>%
     tidyr::unnest_longer("start_latlng", indices_include = FALSE) %>%
     tidyr::unnest_longer("end_latlng", indices_include = FALSE)
-
 }

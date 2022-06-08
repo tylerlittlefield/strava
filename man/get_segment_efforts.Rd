@@ -31,3 +31,12 @@ stored in your \code{.Renviron} file.}
 Returns a set of the authenticated athlete's segment efforts for a given
 segment. Requires subscription.
 }
+\examples{
+if (FALSE) {
+  get_segment_efforts(10561790)
+}
+
+# example response
+tidy(strava_data$segment_efforts)
+
+}

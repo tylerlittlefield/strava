@@ -11,6 +11,14 @@
 #' @param client Strava client. By default, assumes you have client credentials
 #' stored in your `.Renviron` file.
 #'
+#' @examples
+#' if (FALSE) {
+#'   get_segment_efforts(10561790)
+#' }
+#'
+#' # example response
+#' tidy(strava_data$segment_efforts)
+#'
 #' @export
 get_segment_efforts <- function(
     segment_id,
@@ -22,7 +30,7 @@ get_segment_efforts <- function(
 ) {
   resource <- "segment_efforts"
 
-  strava(
+  resp <- strava(
     resource = resource,
     segment_id = segment_id,
     start_date_local = start_date_local,
@@ -31,4 +39,18 @@ get_segment_efforts <- function(
     scope = scope,
     client = client
   )
+
+  structure(resp, class = c("strava_segment_efforts", class(resp)))
+}
+
+is.strava_segment_efforts <- function(x) {
+  inherits(x, "strava_segment_efforts")
+}
+
+#' @rdname tidy
+#' @export
+tidy.strava_segment_efforts <- function(x, ...) {
+  x %>%
+    purrr::map(~ tibble::as_tibble(as.list(unlist(.x)))) %>%
+    bind_rows()
 }

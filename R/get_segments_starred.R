@@ -9,6 +9,14 @@
 #' @param client Strava client. By default, assumes you have client credentials
 #' stored in your `.Renviron` file.
 #'
+#' @examples
+#' if (FALSE) {
+#'   get_segments_starred()
+#' }
+#'
+#' # example response
+#' tidy(strava_data$segments_starred)
+#'
 #' @export
 get_segments_starred <- function(
     page = 1,

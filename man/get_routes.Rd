@@ -17,3 +17,12 @@ stored in your \code{.Renviron} file.}
 \description{
 Returns a route using its identifier. Requires read_all scope for private routes.
 }
+\examples{
+if (FALSE) {
+  get_routes("2964569522013822534")
+}
+
+# example response
+tidy(strava_data$routes)
+
+}

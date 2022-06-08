@@ -25,3 +25,12 @@ stored in your \code{.Renviron} file.}
 List of the authenticated athlete's starred segments. Private segments are
 filtered out unless requested by a token with read_all scope.
 }
+\examples{
+if (FALSE) {
+  get_segments_starred()
+}
+
+# example response
+tidy(strava_data$segments_starred)
+
+}

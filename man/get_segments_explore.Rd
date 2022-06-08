@@ -33,3 +33,15 @@ stored in your \code{.Renviron} file.}
 \description{
 Returns the top 10 segments matching a specified query.
 }
+\examples{
+if (FALSE) {
+  get_segments_explore(
+    bounds = "33.8651,-118.8450,34.2065,-118.1886",
+    activity_type = "riding"
+  )
+}
+
+# example response
+tidy(strava_data$segments_explore)
+
+}

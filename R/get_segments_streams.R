@@ -10,6 +10,14 @@
 #' @param client Strava client. By default, assumes you have client credentials
 #' stored in your `.Renviron` file.
 #'
+#' @examples
+#' if (FALSE) {
+#'   get_segments_streams(1089965)
+#' }
+#'
+#' # example response
+#' tidy(strava_data$segments_streams)
+#'
 #' @export
 get_segments_streams <- function(
     id,

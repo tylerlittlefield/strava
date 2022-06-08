@@ -18,3 +18,12 @@ stored in your \code{.Renviron} file.}
 Returns the specified segment. read_all scope required in order to retrieve
 athlete-specific segment information, or to retrieve private segments.
 }
+\examples{
+if (FALSE) {
+  get_segments(1089965)
+}
+
+# example response
+tidy(strava_data$segments)
+
+}

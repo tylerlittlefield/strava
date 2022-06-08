@@ -17,3 +17,12 @@ stored in your \code{.Renviron} file.}
 \description{
 Returns an equipment using its identifier.
 }
+\examples{
+if (FALSE) {
+  get_gear("b10826293")
+}
+
+# example response
+tidy(strava_data$gear)
+
+}

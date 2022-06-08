@@ -28,3 +28,12 @@ stored in your \code{.Renviron} file.}
 Returns the given segment's streams. Requires read_all scope for private
 segments.
 }
+\examples{
+if (FALSE) {
+  get_segments_streams(1089965)
+}
+
+# example response
+tidy(strava_data$segments_streams)
+
+}

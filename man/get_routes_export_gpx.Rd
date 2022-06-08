@@ -17,3 +17,9 @@ stored in your \code{.Renviron} file.}
 \description{
 Returns a GPX file of the route. Requires read_all scope for private routes.
 }
+\examples{
+if (FALSE) {
+  get_routes_export_gpx("2964569522013822534")
+}
+
+}

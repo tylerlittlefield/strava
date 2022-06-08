@@ -2,6 +2,7 @@
 
 S3method(tidy,strava_gear)
 S3method(tidy,strava_routes)
+S3method(tidy,strava_segment_efforts)
 S3method(tidy,strava_segments)
 S3method(tidy,strava_segments_explore)
 S3method(tidy,strava_segments_starred)

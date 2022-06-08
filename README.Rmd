@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# strava <img src="inst/extdata/strava.png" align="right" height=150/>
+# strava <img src="man/strava.png" align="right" height=150/>
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/tyluRp/strava/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/tyluRp/strava/actions/workflows/R-CMD-check.yaml)

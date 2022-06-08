@@ -8,6 +8,11 @@
 #' @param client Strava client. By default, assumes you have client credentials
 #' stored in your `.Renviron` file.
 #'
+#' @examples
+#' if (FALSE) {
+#'   get_routes_streams("2964569522013822534")
+#' }
+#'
 #' @export
 get_routes_streams <- function(
     id,

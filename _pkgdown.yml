@@ -1,6 +1,5 @@
 url: https://tylurp.github.io/strava/
 template:
-  bootswatch: zephyr
   bootstrap: 5
 
 reference:

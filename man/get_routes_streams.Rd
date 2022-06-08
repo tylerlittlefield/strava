@@ -18,3 +18,9 @@ stored in your \code{.Renviron} file.}
 Returns the given route's streams. Requires read_all scope for private
 routes.
 }
+\examples{
+if (FALSE) {
+  get_routes_streams("2964569522013822534")
+}
+
+}
