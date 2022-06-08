@@ -16,9 +16,21 @@ get_segments <- function(
 ) {
   resource <- sprintf("segments/%s", id)
 
-  strava(
+  resp <- strava(
     resource = resource,
     scope = scope,
     client = client
   )
+
+  structure(resp, class = c("strava_segments", class(resp)))
+}
+
+is.strava_segments <- function(x) {
+  inherits(x, "strava_segments")
+}
+
+#' @rdname tidy
+#' @export
+tidy.strava_segments <- function(x, ...) {
+  tibble::as_tibble(as.list(unlist(x)))
 }

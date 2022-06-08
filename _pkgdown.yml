@@ -3,6 +3,13 @@ template:
   bootstrap: 5
 
 reference:
+- title: Data
+  contents:
+  - strava_data
+- title: Helpers
+  contents:
+  - strava_client
+  - tidy
 - title: Activities
   contents:
   - contains("activities")
@@ -27,6 +34,3 @@ reference:
 - title: Streams
   contents:
   - contains("streams")
-- title: Helpers
-  contents:
-  - strava_client

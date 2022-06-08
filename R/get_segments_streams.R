@@ -20,12 +20,28 @@ get_segments_streams <- function(
 ) {
   resource <- sprintf("segments/%s/streams", id)
 
-  strava(
+  resp <- strava(
     resource = resource,
     keys = keys,
     key_by_type = key_by_type,
     scope = scope,
     client = client
   )
+
+  structure(resp, class = c("strava_segments_streams", class(resp)))
+}
+
+is.strava_segments_streams <- function(x) {
+  inherits(x, "strava_segments_streams")
+}
+
+#' @rdname tidy
+#' @export
+tidy.strava_segments_streams <- function(x, ...) {
+  data <- tibble::enframe(x)
+  split(data, data[["name"]]) %>%
+    purrr::map(~ tidyr::unnest_wider(.x, "value")) %>%
+    purrr::map(~ tidyr::unnest_longer(.x, "data", indices_include = FALSE)) %>%
+    purrr::map(~ tidyr::unnest_longer(.x, "data", indices_include = FALSE))
 }
 

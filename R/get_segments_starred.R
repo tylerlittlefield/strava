@@ -18,11 +18,23 @@ get_segments_starred <- function(
 ) {
   resource <- "segments/starred"
 
-  strava(
+  resp <- strava(
     resource = resource,
     page = page,
     per_page = per_page,
     scope = scope,
     client = client
   )
+
+  structure(resp, class = c("strava_segments_starred", class(resp)))
+}
+
+is.strava_segments_starred <- function(x) {
+  inherits(x, "strava_segments_starred")
+}
+
+#' @rdname tidy
+#' @export
+tidy.strava_segments_starred <- function(x, ...) {
+  tibble::as_tibble(as.list(unlist(x)))
 }

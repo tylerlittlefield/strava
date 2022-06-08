@@ -15,9 +15,21 @@ get_gear <- function(
 ) {
   resource <- sprintf("gear/%s", id)
 
-  strava(
+  resp <- strava(
     resource = resource,
     scope = scope,
     client = client
   )
+
+  structure(resp, class = c("strava_gear", class(resp)))
+}
+
+is.strava_gear <- function(x) {
+  inherits(x, "strava_gear")
+}
+
+#' @rdname tidy
+#' @export
+tidy.strava_gear <- function(x, ...) {
+  tibble::as_tibble(as.list(unlist(x)))
 }

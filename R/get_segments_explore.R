@@ -24,7 +24,7 @@ get_segments_explore <- function(
 ) {
   resource <- "segments/explore"
 
-  strava(
+  resp <- strava(
     resource = resource,
     bounds = bounds,
     activity_type = activity_type,
@@ -33,4 +33,21 @@ get_segments_explore <- function(
     scope = scope,
     client = client
   )
+
+  structure(resp, class = c("strava_segments_explore", class(resp)))
+}
+
+is.strava_segments_explore <- function(x) {
+  inherits(x, "strava_segments_explore")
+}
+
+#' @rdname tidy
+#' @export
+tidy.strava_segments_explore <- function(x, ...) {
+  tibble::enframe(x)["value"] %>%
+    tidyr::unnest_longer("value", indices_include = FALSE) %>%
+    tidyr::unnest_wider("value") %>%
+    tidyr::unnest_longer("start_latlng", indices_include = FALSE) %>%
+    tidyr::unnest_longer("end_latlng", indices_include = FALSE)
+
 }

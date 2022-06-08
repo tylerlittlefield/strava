@@ -35,7 +35,21 @@ Refresh your R session and make a request:
 ```{r}
 library(strava)
 
-if (interactive()) get_athlete_activities()
+# can only authenticate in interactive session
+if (interactive()) 
+  get_gear()
+
+# an example response of the above request would be:
+strava_data$gear
 ```
 
 The first time you make a request, you will be asked to authorize. After authorization, the token will be cached in memory for future requests in the current session.
+
+## Tidy responses
+
+Most responses from the `get_` family of functions have a _tidy_ procedure that attempts to flatten the response into a table.
+
+```{r}
+tidy(strava_data$gear)
+```
+
