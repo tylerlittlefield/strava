@@ -1,5 +1,6 @@
 url: https://tylurp.github.io/strava/
 template:
+  package: preferably
   bootstrap: 5
 
 reference:

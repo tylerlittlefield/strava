@@ -42,5 +42,3 @@ tidy.strava_routes <- function(x, ...) {
       tidyr::unnest_longer("end_latlng", indices_include = FALSE)
   )
 }
-
-
