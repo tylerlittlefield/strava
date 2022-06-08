@@ -8,7 +8,7 @@ athlete-specific segment information, or to retrieve private segments."><!-- mat
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
     
 
-    <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-primary"><div class="container">
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
     
     <a class="navbar-brand me-2" href="../index.html">strava</a>
 
@@ -65,6 +65,28 @@ athlete-specific segment information, or to retrieve private segments.</p>
 stored in your <code>.Renviron</code> file.</p></dd>
 </dl></div>
 
+    <div class="section level2">
+    <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span>
+<span class="r-in">  <span class="fu">get_segments</span><span class="op">(</span><span class="fl">1089965</span><span class="op">)</span></span>
+<span class="r-in"><span class="op">}</span></span>
+<span class="r-in"></span>
+<span class="r-in"><span class="co"># example response</span></span>
+<span class="r-in"><span class="fu"><a href="tidy.html">tidy</a></span><span class="op">(</span><span class="va">strava_data</span><span class="op">$</span><span class="va">segments</span><span class="op">)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 1 × 44</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   id     resource_state name  activity_type distance average_grade maximum_grade</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> 10899… 3              Tuna… Ride          6658.13  -7.9          2.3          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 37 more variables: elevation_high &lt;chr&gt;, elevation_low &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   start_latlng1 &lt;chr&gt;, start_latlng2 &lt;chr&gt;, end_latlng1 &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   end_latlng2 &lt;chr&gt;, elevation_profile &lt;chr&gt;, climb_category &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   state &lt;chr&gt;, country &lt;chr&gt;, private &lt;chr&gt;, hazardous &lt;chr&gt;, starred &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   created_at &lt;chr&gt;, updated_at &lt;chr&gt;, total_elevation_gain &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   map.id &lt;chr&gt;, map.polyline &lt;chr&gt;, map.resource_state &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   effort_count &lt;chr&gt;, athlete_count &lt;chr&gt;, star_count &lt;chr&gt;, …</span></span>
+<span class="r-in"></span>
+</code></pre></div>
+    </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside></div>
 

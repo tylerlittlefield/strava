@@ -8,7 +8,7 @@ segment. Requires subscription."><!-- mathjax --><script src="https://cdnjs.clou
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
     
 
-    <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-primary"><div class="container">
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
     
     <a class="navbar-brand me-2" href="../index.html">strava</a>
 
@@ -78,6 +78,37 @@ segment. Requires subscription.</p>
 stored in your <code>.Renviron</code> file.</p></dd>
 </dl></div>
 
+    <div class="section level2">
+    <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span>
+<span class="r-in">  <span class="fu">get_segment_efforts</span><span class="op">(</span><span class="fl">10561790</span><span class="op">)</span></span>
+<span class="r-in"><span class="op">}</span></span>
+<span class="r-in"></span>
+<span class="r-in"><span class="co"># example response</span></span>
+<span class="r-in"><span class="fu"><a href="tidy.html">tidy</a></span><span class="op">(</span><span class="va">strava_data</span><span class="op">$</span><span class="va">segment_efforts</span><span class="op">)</span></span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>'default.stringsAsFactors' is deprecated.</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> Use '`stringsAsFactors = FALSE`' instead.</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> See help("Deprecated")</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 7 × 42</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   id                resource_state name  activity.id activity.resour… athlete.id</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> 2958104429999163… 2              Star… 7104470667  1                97088920  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> 2968244285672266… 2              Star… 7255352296  1                97088920  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> 2937827159742753… 2              Star… 6814225681  1                97088920  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> 2963212703582510… 2              Star… 7181230495  1                97088920  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> 2930928097483078… 2              Star… 6717685729  1                97088920  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> 2968986368691345… 2              Star… 7266457826  1                97088920  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">7</span> 2935255681161008… 2              Star… 6778067197  1                97088920  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 36 more variables: athlete.resource_state &lt;chr&gt;, elapsed_time &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   moving_time &lt;chr&gt;, start_date &lt;chr&gt;, start_date_local &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   distance &lt;chr&gt;, start_index &lt;chr&gt;, end_index &lt;chr&gt;, device_watts &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   average_heartrate &lt;chr&gt;, max_heartrate &lt;chr&gt;, segment.id &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   segment.resource_state &lt;chr&gt;, segment.name &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   segment.activity_type &lt;chr&gt;, segment.distance &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   segment.average_grade &lt;chr&gt;, segment.maximum_grade &lt;chr&gt;, …</span></span>
+<span class="r-in"></span>
+</code></pre></div>
+    </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside></div>
 
