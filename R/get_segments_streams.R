@@ -48,8 +48,8 @@ is.strava_segments_streams <- function(x) {
 tidy.strava_segments_streams <- function(x, ...) {
   data <- tibble::enframe(x)
   split(data, data[["name"]]) %>%
-    purrr::map(~ tidyr::unnest_wider(.x, "value")) %>%
-    purrr::map(~ tidyr::unnest_longer(.x, "data", indices_include = FALSE)) %>%
-    purrr::map(~ tidyr::unnest_longer(.x, "data", indices_include = FALSE))
+    map(~ tidyr::unnest_wider(.x, "value")) %>%
+    map(~ tidyr::unnest_longer(.x, "data", indices_include = FALSE)) %>%
+    map(~ tidyr::unnest_longer(.x, "data", indices_include = FALSE))
 }
 

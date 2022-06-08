@@ -15,7 +15,7 @@ bind_rows <- function(..., .id = NULL) {
 
   id_vals <- if (is.null(names(res))) 1:length(res) else names(res)
 
-  saf <- default.stringsAsFactors()
+  saf <- getOption("stringsAsFactors")
   options(stringsAsFactors = FALSE)
   on.exit(options(stringsAsFactors = saf))
 

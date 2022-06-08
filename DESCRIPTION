@@ -15,7 +15,6 @@ Config/testthat/edition: 3
 Imports: 
     httr2,
     magrittr,
-    purrr,
     tibble,
     tidyr
 URL: https://github.com/tyluRp/strava,

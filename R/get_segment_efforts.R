@@ -51,6 +51,6 @@ is.strava_segment_efforts <- function(x) {
 #' @export
 tidy.strava_segment_efforts <- function(x, ...) {
   x %>%
-    purrr::map(~ tibble::as_tibble(as.list(unlist(.x)))) %>%
+    map(~ tibble::as_tibble(as.list(unlist(.x)))) %>%
     bind_rows()
 }
