@@ -32,10 +32,11 @@ jobs:
         with:
           extra-packages: any::pkgdown, local::.
           needs: website
+
       - name: Install dependencies
         run: |
-          install.packages("remotes")
-          remotes::install_github("amirmasoudabdol/preferably")
+          install.packages("devtools")
+          devtools::install_github("amirmasoudabdol/preferably")
         shell: Rscript {0}
 
       - name: Build site
