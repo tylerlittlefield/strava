@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# strava <img src="man/strava.png" align="right" height=150/>
+# strava
 
 <!-- badges: start -->
 
