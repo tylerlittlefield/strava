@@ -1,7 +1,7 @@
 # src: https://github.com/hrbrmstr/include-in-pkgs
 map <- function(.x, .f, ...) {
   if (inherits(.f, "formula")) {
-    .body <- dimnames(attr(terms(.f), "factors"))[[1]]
+    .body <- dimnames(attr(stats::terms(.f), "factors"))[[1]]
     .f <- function(.x, .=.x) {}
     body(.f) <- as.expression(parse(text=.body))
   }
