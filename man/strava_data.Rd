@@ -5,7 +5,7 @@
 \alias{strava_data}
 \title{Example strava data}
 \format{
-An object of class \code{list} of length 12.
+An object of class \code{list} of length 13.
 }
 \usage{
 strava_data

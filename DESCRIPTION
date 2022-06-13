@@ -16,7 +16,8 @@ Imports:
     httr2,
     magrittr,
     tibble,
-    tidyr
+    tidyr,
+    xml2
 URL: https://github.com/tyluRp/strava,
     https://tylurp.github.io/strava/
 BugReports: https://github.com/tyluRp/strava/issues

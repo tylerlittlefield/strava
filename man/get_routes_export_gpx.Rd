@@ -4,7 +4,7 @@
 \alias{get_routes_export_gpx}
 \title{Export Route GPX}
 \usage{
-get_routes_export_gpx(id, scope = "activity:read", client = strava_client())
+get_routes_export_gpx(id, scope = "read", client = strava_client())
 }
 \arguments{
 \item{id}{The identifier of the route.}
@@ -15,11 +15,13 @@ get_routes_export_gpx(id, scope = "activity:read", client = strava_client())
 stored in your \code{.Renviron} file.}
 }
 \description{
-Returns a GPX file of the route. Requires read_all scope for private routes.
+Returns a GPX file of the route. Requires \code{read_all} scope for private
+routes.
 }
 \examples{
 if (FALSE) {
-  get_routes_export_gpx("2964569522013822534")
+  gpx <- get_routes_export_gpx("2964569522013822534")
+  tidy(gpx)
 }
 
 }
