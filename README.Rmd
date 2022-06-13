@@ -53,3 +53,6 @@ Most responses from the `get_` family of functions have a _tidy_ procedure that 
 tidy(strava_data$gear)
 ```
 
+## Code of Conduct
+
+Please note that the strava project is released with a [Contributor Code of Conduct](https://tylurp.github.io/strava/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.

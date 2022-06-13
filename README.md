@@ -93,3 +93,9 @@ tidy(strava_data$gear)
 #> # … with 4 more variables: brand_name <chr>, model_name <chr>,
 #> #   frame_type <chr>, weight <chr>
 ```
+
+## Code of Conduct
+
+Please note that the strava project is released with a [Contributor Code
+of Conduct](https://tylurp.github.io/strava/CODE_OF_CONDUCT.html). By
+contributing to this project, you agree to abide by its terms.
