@@ -48,8 +48,8 @@ activity:read_all for Only Me activities."><!-- mathjax --><script src="https://
 
     <div class="ref-description section level2">
     <p>Returns the athletes who kudoed an activity identified by an identifier.
-Requires activity:read for Everyone and Followers activities. Requires
-activity:read_all for Only Me activities.</p>
+Requires <code>activity:read</code> for Everyone and Followers activities. Requires
+<code>activity:read_all</code> for Only Me activities.</p>
     </div>
 
     <div class="section level2">
@@ -77,7 +77,23 @@ activity:read_all for Only Me activities.</p>
 <dd><p>Strava client. By default, assumes you have client credentials
 stored in your <code>.Renviron</code> file.</p></dd>
 </dl></div>
+    <div class="section level2">
+    <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
+    <p>An array of <a href="https://developers.strava.com/docs/reference/#api-models-SummaryAthlete" class="external-link">SummaryAthlete</a> objects.</p>
+    </div>
 
+    <div class="section level2">
+    <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span>
+<span class="r-in">  <span class="fu">get_activities_kudos</span><span class="op">(</span><span class="fl">7255352296</span><span class="op">)</span></span>
+<span class="r-in"><span class="op">}</span></span>
+<span class="r-in"></span>
+<span class="r-in"><span class="co"># example response</span></span>
+<span class="r-in"><span class="fu"><a href="tidy.html">tidy</a></span><span class="op">(</span><span class="va">strava_data</span><span class="op">$</span><span class="va">activities_kudos</span><span class="op">)</span></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in UseMethod("tidy"):</span> no applicable method for 'tidy' applied to an object of class "list"</span>
+<span class="r-in"></span>
+</code></pre></div>
+    </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside></div>
 
