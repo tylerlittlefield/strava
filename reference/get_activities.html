@@ -48,8 +48,8 @@ activity:read_all for Only Me activities."><!-- mathjax --><script src="https://
 
     <div class="ref-description section level2">
     <p>Returns the given activity that is owned by the authenticated athlete.
-Requires activity:read for Everyone and Followers activities. Requires
-activity:read_all for Only Me activities.</p>
+Requires <code>activity:read</code> for Everyone and Followers activities. Requires
+<code>activity:read_all</code> for Only Me activities.</p>
     </div>
 
     <div class="section level2">
@@ -85,6 +85,19 @@ stored in your <code>.Renviron</code> file.</p></dd>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span>
 <span class="r-in">  <span class="fu">get_activities</span><span class="op">(</span><span class="fl">7255352296</span><span class="op">)</span></span>
 <span class="r-in"><span class="op">}</span></span>
+<span class="r-in"></span>
+<span class="r-in"><span class="fu"><a href="tidy.html">tidy</a></span><span class="op">(</span><span class="va">strava_data</span><span class="op">$</span><span class="va">activities</span><span class="op">)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 1 × 68</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   resource_state athlete   name         distance moving_time elapsed_time</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;list&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span>              3 <span style="color: #949494;">&lt;int [1]&gt;</span> Morning Ride   <span style="text-decoration: underline;">56</span>930.        <span style="text-decoration: underline;">8</span>218         <span style="text-decoration: underline;">9</span>489</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 62 more variables: total_elevation_gain &lt;dbl&gt;, type &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   sport_type &lt;chr&gt;, workout_type &lt;int&gt;, id &lt;dbl&gt;, start_date &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   start_date_local &lt;chr&gt;, timezone &lt;chr&gt;, utc_offset &lt;dbl&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   location_city &lt;lgl&gt;, location_state &lt;lgl&gt;, location_country &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   achievement_count &lt;int&gt;, kudos_count &lt;int&gt;, comment_count &lt;int&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   athlete_count &lt;int&gt;, photo_count &lt;int&gt;, map &lt;list&gt;, trainer &lt;lgl&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   commute &lt;lgl&gt;, manual &lt;lgl&gt;, private &lt;lgl&gt;, visibility &lt;chr&gt;, …</span></span>
 <span class="r-in"></span>
 </code></pre></div>
     </div>
