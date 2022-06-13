@@ -28,3 +28,4 @@ stored in your \code{.Renviron} file.}
 Returns a set of streams for a segment effort completed by the authenticated
 athlete. Requires read_all scope.
 }
+\concept{streams}

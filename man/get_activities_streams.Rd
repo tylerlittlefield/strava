@@ -28,3 +28,4 @@ stored in your \code{.Renviron} file.}
 Returns the given activity's streams. Requires activity:read scope. Requires
 activity:read_all scope for Only Me activities.
 }
+\concept{streams}

@@ -16,3 +16,4 @@ stored in your \code{.Renviron} file.}
 Returns the the authenticated athlete's heart rate and power zones. Requires
 profile:read_all.
 }
+\concept{athlete}

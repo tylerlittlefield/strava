@@ -6,5 +6,7 @@
 #' @param x A response from any `get_` functions.
 #' @param ... Ignore.
 #'
+#' @concept helpers
+#'
 #' @export
 tidy <- function(x, ...) UseMethod("tidy")

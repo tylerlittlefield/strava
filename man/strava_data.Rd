@@ -5,7 +5,7 @@
 \alias{strava_data}
 \title{Example strava data}
 \format{
-An object of class \code{list} of length 10.
+An object of class \code{list} of length 11.
 }
 \usage{
 strava_data
@@ -13,4 +13,9 @@ strava_data
 \description{
 A list containing example responses from all \code{get_} functions.
 }
+\examples{
+names(strava_data)
+
+}
+\concept{data}
 \keyword{datasets}

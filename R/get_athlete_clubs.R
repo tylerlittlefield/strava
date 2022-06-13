@@ -9,6 +9,8 @@
 #' @param client Strava client. By default, assumes you have client credentials
 #' stored in your `.Renviron` file.
 #'
+#' @concept athlete
+#'
 #' @export
 get_athlete_clubs <- function(
     page = 1,

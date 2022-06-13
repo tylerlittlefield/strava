@@ -25,3 +25,4 @@ stored in your \code{.Renviron} file.}
 Returns a list of the clubs whose membership includes the authenticated
 athlete.
 }
+\concept{athlete}

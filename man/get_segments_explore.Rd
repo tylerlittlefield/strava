@@ -45,3 +45,4 @@ if (FALSE) {
 tidy(strava_data$segments_explore)
 
 }
+\concept{segments}

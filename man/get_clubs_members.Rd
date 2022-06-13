@@ -27,3 +27,4 @@ stored in your \code{.Renviron} file.}
 \description{
 Returns a list of the athletes who are members of a given club.
 }
+\concept{clubs}

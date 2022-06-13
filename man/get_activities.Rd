@@ -27,12 +27,15 @@ The activity's detailed representation. An instance of
 }
 \description{
 Returns the given activity that is owned by the authenticated athlete.
-Requires activity:read for Everyone and Followers activities. Requires
-activity:read_all for Only Me activities.
+Requires \code{activity:read} for Everyone and Followers activities. Requires
+\code{activity:read_all} for Only Me activities.
 }
 \examples{
 if (FALSE) {
   get_activities(7255352296)
 }
 
+tidy(strava_data$activities)
+
 }
+\concept{activities}

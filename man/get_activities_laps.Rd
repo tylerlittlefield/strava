@@ -19,3 +19,4 @@ Returns the laps of an activity identified by an identifier. Requires
 activity:read for Everyone and Followers activities. Requires
 activity:read_all for Only Me activities.
 }
+\concept{activities}

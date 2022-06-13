@@ -8,24 +8,42 @@ strava_client(
   id = Sys.getenv("STRAVA_ID"),
   secret = Sys.getenv("STRAVA_SECRET"),
   token_url = "https://www.strava.com/oauth/token",
-  name = "strava-oauth"
+  name = "strava-oauth",
+  ...
 )
 }
 \arguments{
-\item{id}{Client ID. By default, attempts to pull ID from .Renviron file.}
+\item{id}{Client ID.}
 
-\item{secret}{Client secret By default, attempts to pull ID from .Renviron file.}
+\item{secret}{Client secret.}
 
-\item{token_url}{Token URL. Should not need to be changed.}
+\item{token_url}{Token URL.}
 
-\item{name}{Client name. By default, 'strava-oauth' but you can name it whatever.}
+\item{name}{Client name.}
+
+\item{...}{Additional parameters passed to \code{httr2::oauth_client}.}
 }
 \description{
-Create a strava client
+Strava uses \href{https://github.com/Kong/mashape-oauth/blob/master/FLOWS.md#oauth-2-three-legged}{OAuth2}
+for authentication to the V3 API. OAuth allows external applications to
+request authorization to a user's data. It allows users to grant and revoke
+API access on a per-application basis and keeps users' authentication details
+safe. All developers need to \href{https://developers.strava.com/docs/getting-started/#account}{register their application}
+before getting started. A registered application will be assigned a client ID
+and client secret. The secret is used for authentication and should never be
+shared.
 }
 \examples{
-if (FALSE) {
-  strava_client()
-}
+# strava client will pull environment variables by default
+Sys.setenv(
+  STRAVA_ID="123",
+  STRAVA_SECRET="my_secret_code"
+)
+
+strava_client()
 
 }
+\seealso{
+\url{https://developers.strava.com/docs/getting-started/}
+}
+\concept{helpers}

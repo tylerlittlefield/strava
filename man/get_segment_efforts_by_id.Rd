@@ -22,3 +22,4 @@ stored in your \code{.Renviron} file.}
 Returns a segment effort from an activity that is owned by the authenticated
 athlete. Requires subscription.
 }
+\concept{segment efforts}

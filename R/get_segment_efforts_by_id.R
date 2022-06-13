@@ -8,6 +8,8 @@
 #' @param client Strava client. By default, assumes you have client credentials
 #' stored in your `.Renviron` file.
 #'
+#' @concept segment efforts
+#'
 #' @export
 get_segment_efforts_by_id <- function(
     id,

@@ -40,3 +40,4 @@ if (FALSE) {
 tidy(strava_data$segment_efforts)
 
 }
+\concept{segment efforts}

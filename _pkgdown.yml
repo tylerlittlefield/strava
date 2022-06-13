@@ -11,32 +11,31 @@ template:
 reference:
 - title: Data
   contents:
-  - strava_data
+  - has_concept("data")
 - title: Helpers
   contents:
-  - strava_client
-  - tidy
+  - has_concept("helpers")
 - title: Activities
   contents:
-  - contains("activities")
+  - has_concept("activities")
 - title: Athletes
   contents:
-  - contains("athlete")
+  - has_concept("athlete")
 - title: Clubs
   contents:
-  - contains("clubs")
+  - has_concept("clubs")
 - title: Gear
   contents:
-  - contains("gear")
+  - has_concept("gear")
 - title: Routes
   contents:
-  - contains("routes")
+  - has_concept("routes")
 - title: Segment Efforts
   contents:
-  - contains("efforts")
+  - has_concept("segment efforts")
 - title: Segments
   contents:
-  - contains("segment")
+  - has_concept("segments")
 - title: Streams
   contents:
-  - contains("streams")
+  - has_concept("streams")

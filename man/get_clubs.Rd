@@ -17,3 +17,4 @@ stored in your \code{.Renviron} file.}
 \description{
 Returns a given club using its identifier.
 }
+\concept{clubs}

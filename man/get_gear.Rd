@@ -26,3 +26,4 @@ if (FALSE) {
 tidy(strava_data$gear)
 
 }
+\concept{gear}

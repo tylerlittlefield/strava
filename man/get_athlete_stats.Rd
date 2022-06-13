@@ -18,3 +18,4 @@ stored in your \code{.Renviron} file.}
 Returns the activity stats of an athlete. Only includes data from activities
 set to Everyone visibilty.
 }
+\concept{athlete}

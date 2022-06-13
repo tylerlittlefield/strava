@@ -10,6 +10,8 @@
 #' @param client Strava client. By default, assumes you have client credentials
 #' stored in your `.Renviron` file.
 #'
+#' @concept streams
+#'
 #' @export
 get_segment_efforts_streams <- function(
     id,

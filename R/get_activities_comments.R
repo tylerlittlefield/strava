@@ -11,6 +11,8 @@
 #' @param client Strava client. By default, assumes you have client credentials
 #' stored in your `.Renviron` file.
 #'
+#' @concept activities
+#'
 #' @export
 get_activities_comments <- function(
     id,

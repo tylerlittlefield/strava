@@ -75,7 +75,8 @@ strava_data <- list(
   routes_streams = routes_streams,
   routes_export_tcx = routes_export_tcx,
   routes_export_gpx = routes_export_gpx,
-  gear = gear
+  gear = gear,
+  activities = activities
 )
 
 usethis::use_data(strava_data, overwrite = TRUE)

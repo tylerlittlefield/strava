@@ -29,3 +29,4 @@ Returns the comments on the given activity. Requires activity:read for
 Everyone and Followers activities. Requires activity:read_all for Only Me
 activities.
 }
+\concept{activities}

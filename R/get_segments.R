@@ -8,6 +8,8 @@
 #' @param client Strava client. By default, assumes you have client credentials
 #' stored in your `.Renviron` file.
 #'
+#' @concept segments
+#'
 #' @examples
 #' if (FALSE) {
 #'   get_segments(1089965)

@@ -27,3 +27,4 @@ if (FALSE) {
 tidy(strava_data$segments)
 
 }
+\concept{segments}

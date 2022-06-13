@@ -28,3 +28,4 @@ stored in your \code{.Renviron} file.}
 Returns a list of the routes created by the authenticated athlete. Private
 routes are filtered out unless requested by a token with read_all scope.
 }
+\concept{routes}

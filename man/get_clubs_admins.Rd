@@ -27,3 +27,4 @@ stored in your \code{.Renviron} file.}
 \description{
 Returns a list of the administrators of a given club.
 }
+\concept{clubs}

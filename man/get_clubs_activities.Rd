@@ -30,3 +30,4 @@ athlete must belong to the requested club in order to hit this endpoint.
 Pagination is supported. Athlete profile visibility is respected for all
 activities.
 }
+\concept{clubs}
