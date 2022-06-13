@@ -12,30 +12,39 @@ reference:
 - title: Data
   contents:
   - has_concept("data")
+
 - title: Helpers
   contents:
   - has_concept("helpers")
+
 - title: Activities
   contents:
   - has_concept("activities")
+
 - title: Athletes
   contents:
   - has_concept("athlete")
+
 - title: Clubs
   contents:
   - has_concept("clubs")
+
 - title: Gear
   contents:
   - has_concept("gear")
+
 - title: Routes
   contents:
   - has_concept("routes")
+
 - title: Segment Efforts
   contents:
   - has_concept("segment efforts")
+
 - title: Segments
   contents:
   - has_concept("segments")
+
 - title: Streams
   contents:
   - has_concept("streams")
