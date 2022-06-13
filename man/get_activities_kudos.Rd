@@ -24,9 +24,21 @@ get_activities_kudos(
 \item{client}{Strava client. By default, assumes you have client credentials
 stored in your \code{.Renviron} file.}
 }
+\value{
+An array of \href{https://developers.strava.com/docs/reference/#api-models-SummaryAthlete}{SummaryAthlete} objects.
+}
 \description{
 Returns the athletes who kudoed an activity identified by an identifier.
-Requires activity:read for Everyone and Followers activities. Requires
-activity:read_all for Only Me activities.
+Requires \code{activity:read} for Everyone and Followers activities. Requires
+\code{activity:read_all} for Only Me activities.
+}
+\examples{
+if (FALSE) {
+  get_activities_kudos(7255352296)
+}
+
+# example response
+tidy(strava_data$activities_kudos)
+
 }
 \concept{activities}

@@ -24,9 +24,22 @@ get_activities_comments(
 \item{client}{Strava client. By default, assumes you have client credentials
 stored in your \code{.Renviron} file.}
 }
+\value{
+\if{html}{\out{<div class="sourceCode">}}\preformatted{An array of [Comment](https://developers.strava.com/docs/reference/#api-models-Comment) objects.
+}\if{html}{\out{</div>}}
+}
 \description{
-Returns the comments on the given activity. Requires activity:read for
-Everyone and Followers activities. Requires activity:read_all for Only Me
+Returns the comments on the given activity. Requires \code{activity:read} for
+Everyone and Followers activities. Requires \code{activity:read_all} for Only Me
 activities.
+}
+\examples{
+if (FALSE) {
+  get_activities_comments(7148393860)
+}
+
+# example response
+tidy(strava_data$activities_comments)
+
 }
 \concept{activities}

@@ -60,6 +60,8 @@ gear <- get_gear("b10826293")
 # ------------------------------------------------------------------------------
 
 activities <- get_activities(7255352296)
+activities_comments <- get_activities_comments(7148393860)
+activities_kudos <- get_activities_kudos(7255352296)
 
 # ------------------------------------------------------------------------------
 #' Compile all datasets into a single list for easy access
@@ -76,7 +78,9 @@ strava_data <- list(
   routes_export_tcx = routes_export_tcx,
   routes_export_gpx = routes_export_gpx,
   gear = gear,
-  activities = activities
+  activities = activities,
+  activities_comments = activities_comments,
+  activities_kudos = activities_kudos
 )
 
 usethis::use_data(strava_data, overwrite = TRUE)
